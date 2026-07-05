@@ -64,6 +64,11 @@ annotate service.Incidents with @(
             Value : customer.name,
             Label : '{i18n>Customer}',
         },
+        {
+            $Type : 'UI.DataFieldForAction',
+            Action : 'ProcessorService.changeStatus',
+            Label : '{i18n>ChangeStatus}',
+        },
     ],
     UI.SelectionFields : [
         status_code,

@@ -26,23 +26,11 @@
     "requires": {
       "[development]": {
         "auth": {
-          "kind": "mocked",
-          "users": {
-            "alice": {
-              "roles": [
-                "support"
-              ]
-            },
-            "bob": {
-              "roles": [
-                "support"
-              ]
-            }
-          }
+          "kind": "dummy"
         }
       },
       "[production]": {
-        "auth": "xsuaa",
+        "auth": "dummy",
         "db": "hana"
       },
       "destinations": true,
